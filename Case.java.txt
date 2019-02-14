@@ -1,0 +1,27 @@
+// Write a program to determine whether the entered character is in uppercase or lowercase, or is an invalid character.
+
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+      
+      Scanner scan = new Scanner(System.in);
+	
+		String sa = scan.next();
+		char b = sa.charAt(0);
+		int s = (int)b;		
+		
+		if (97<=s && s<=122) {
+			System.out.println("0");
+		}
+		else if (65<=s && s<=90) {
+			System.out.println("1");
+		}
+		else {
+			System.out.println("-1");
+		}
+
+	}
+}
